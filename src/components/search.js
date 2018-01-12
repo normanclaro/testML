@@ -53,7 +53,4 @@ class busqueda extends React.Component {
     }
   }
 }
-ReactDOM.render(
-  <Busqueda />,
-  document.getElementById('root')
-);
+ReactDOM.render(<Busqueda />,document.getElementById('root'));
