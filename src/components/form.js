@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import SearchForm from './component/form.js';
 export default class SearchForm extends React.component {
   constructor(props) {
     super(props);
