@@ -1,19 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import {header} from './components/header.js';
+import Header from './components/header.js'
+import SearchForm from './components/form.js'
 
-
-class App extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      main: []
-    };
-}
+class App extends Component {
   render() {
     return (
       <div>
-        <header />
+        <Header />
       </div>
     );
   }

@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import Header from './components/header.js';
-export default class Header extends React.Component{
+import header from './header.js'
+import SearchForm from './form.js'
+import logo from './interface/logoml.png'
+import lupa from './interface/lupa.png'
+
+export default class Header extends Component{
   render(){
     return(
-      <header className = 'App' >
-        <div>
-          <img className = 'logoml' src = {require('./components/interface/logoml.png')} alt = 'logo'/>
-        </div>
-      </header>
+      <div className='App'>
+          <img className = 'logoml' src = {require('./interface/logoml.png')} alt = 'logo'/>
+          <SearchForm />
+      </div>
     );
   }
 }

@@ -1,27 +1,17 @@
 import React, { Component } from 'react';
-import SearchForm from './component/form.js';
-export default class SearchForm extends React.component {
-  constructor(props) {
-    super(props);
-    this.state = {value = ''};
-    this.handleChange = this.handlechange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-  handleChange(event){
-      this.setState({value: event.target.value});
-  }
-  handleSubmit(event){
-      //aca no se como poner el fetch para la api
-      event.preventDefault();
-  }
-}
+import searchForm from './form.js'
+import logo from './interface/logoml.png'
+import lupa from './interface/lupa.png'
+
+export default class SearchForm extends Component {
 render(){
   return(
     <form className='nav-search-bar' action = '/sites/MLA/search?q=' method = 'GET' onSubmit={this.handleSubmit}>
       <input type= 'text' className = 'nav-search-input' placeholder = 'Nunca dejes de buscar'/>
       <button className = 'nav-search-button' type = 'submit'>
-        <img className = 'lupa' src={require('./components/interface/lupa.png')} alt = 'lupa'/>
+        <img className = 'lupa' src={require('./interface/lupa.png')} alt = 'lupa'/>
       </button>
     </form>
-  )
-};
+    )
+  }
+}

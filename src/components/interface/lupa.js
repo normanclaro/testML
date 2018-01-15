@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import lupa from './components/interface/lupa.png';
+import lupa from './lupa.png';
 export default class Icon extends Component {
   render() {
     return (
