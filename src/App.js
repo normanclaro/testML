@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/header.js'
 import SearchForm from './components/form.js'
-import busqueda from './components/search.js';
+import searchNav from './components/search.js';
 
 class App extends Component {
   render() {
